@@ -1,10 +1,18 @@
 import { createContext, useState, ReactNode } from 'react';
 
-export const ChallengesContext = createContext({});
+type ChallengesContexData = {
+  level: number;
+  currentExperience: number;
+  challengesCompleted: number;
+  levelUp: () => void;
+  startNewChallenge: () => void;
+}
 
 type ChallengesProviderProps = {
   children: ReactNode
 }
+
+export const ChallengesContext = createContext({} as ChallengesContexData);
 
 export function ChallengesProvider({ children }: ChallengesProviderProps) {
   const [level, setLeve] = useState(1);
@@ -15,8 +23,7 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
     setLeve(level + 1);
   }
 
-  const startNewChallenge() {
-
+  const startNewChallenge = () => {
   }
 
   return (
