@@ -23,7 +23,7 @@
   }
 }
 
-@media(max-width: 720px) { /* Resolução mobile */
+@media(max-width: 770px) { /* Resolução mobile */
   html {
     font-size: 87.5%;
   }

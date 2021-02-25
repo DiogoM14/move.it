@@ -1,6 +1,6 @@
 .container {
   height: 100vh;
-  max-width: 992px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
 
@@ -15,4 +15,17 @@
   grid-template-columns: 1fr 1fr;
   gap: 6.25rem;
   align-content: center;
+}
+
+@media (max-width: 768px) {
+  .container section {
+    flex: 1;
+
+    padding: 5.5rem 0 2.5rem 0;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6.25rem;
+    align-content: center;
+  }
 }
