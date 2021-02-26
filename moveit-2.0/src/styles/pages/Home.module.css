@@ -1,19 +1,22 @@
 .wrapper {
-  display: grid;
-  grid-template-columns: 7rem 1fr;
+  display: flex;
+  flex-direction: row;
 }
 
 .homeContainer {
-  height: 100vh;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
-
   padding: 2.5rem 2rem;
-
-  background: var(--background);
+  
+  display: flex;
+  flex-direction: column;
 }
 
 .homeContainer section {
+  flex: 1;
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 6.25rem;
+  align-content: center;
 }
