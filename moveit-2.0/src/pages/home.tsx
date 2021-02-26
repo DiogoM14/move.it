@@ -1,4 +1,6 @@
+import Head from 'next/head';
 import styles from '../styles/pages/Home.module.css';
+import { ChallengeBox } from './components/ChallengeBox';
 import { CompletedChallenges } from './components/CompletedChallenges';
 import { Profile } from './components/Profile';
 import { SideBar } from './components/SideBar';
@@ -6,6 +8,11 @@ import { SideBar } from './components/SideBar';
 export default function Home() {
   return (  
     <div className={styles.wrapper}>
+
+      <Head>
+        <title>Home | Move.it</title>
+      </Head>
+
       <SideBar />
       
       <div className={styles.homeContainer}>
@@ -14,7 +21,9 @@ export default function Home() {
             <Profile />
             <CompletedChallenges />
           </div>
-          <div></div>
+          <div>
+            <ChallengeBox />
+          </div>
         </section>
       </div>
     </div>
