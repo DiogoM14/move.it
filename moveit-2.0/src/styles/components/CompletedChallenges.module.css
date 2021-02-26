@@ -1,0 +1,14 @@
+.completedChallengesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.5rem;
+  padding-bottom: 1.1rem;
+
+  border-bottom: 1.5px solid var(--gray-line);
+}
+
+.completedChallengesContainer strong {
+  font-size: 1.13rem;
+}
+
