@@ -21,9 +21,13 @@
 }
 
 .sideBarContainer > div button {
-  width: 100%;
+
+  border: none;
+  background: none;
+
+  font-size: 0;
 }
 
 .sideBarContainer > div button:first-child {
-  margin-bottom: 1rem;
+  margin-bottom: 2.75rem;
 }
