@@ -1,4 +1,41 @@
 .challengeBoxContainer {
+  display: flex;
+  flex-direction: column;
+
   height: 100%;
+  padding: 1.5rem 2rem;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+
   background-color: var(--white);
+}
+
+.challengeBoxContainer strong {
+  color: var(--text);
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.challengeBoxContainer p {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  font-size: 1rem;
+  line-height: 1.4;
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+
+  color: var(--text);
+  background-color: var(--white);
+}
+
+.challengeBoxContainer p img {
+  margin-bottom: 1rem;
 }
