@@ -20,3 +20,32 @@
   gap: 6.25rem;
   align-content: center;
 }
+
+@media (max-width: 1024px) {
+  .homeContainer section {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 570px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: 7rem 1fr;
+  }
+
+  .homeContainer {
+    max-width: 550px;  /* max-width: ; */
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homeContainer section {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+    gap: 3.25rem;
+  }
+}

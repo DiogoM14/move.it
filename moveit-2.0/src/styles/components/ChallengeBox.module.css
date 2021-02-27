@@ -39,3 +39,13 @@
 .challengeBoxContainer p img {
   margin-bottom: 1rem;
 }
+
+@media (max-width: 570px) {
+  .challengeBoxContainer strong {
+    font-size: 2rem;
+  }
+
+  .challengeBoxContainer p {
+    font-size: 1.5rem;
+  }
+}

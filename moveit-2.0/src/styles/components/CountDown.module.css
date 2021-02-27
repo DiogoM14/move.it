@@ -65,3 +65,9 @@
 .countdownButton:hover {
   background: var(--blue-dark);
 }
+
+@media (max-width: 570px) {
+  .countdownButton {
+    font-size: 1.7rem;
+  }
+}

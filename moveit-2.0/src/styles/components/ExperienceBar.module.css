@@ -27,3 +27,23 @@ span.currentExperience {
   top: 12px;
   transform: translateX(-50%);
 }
+
+@media (max-width: 570px) {
+  .experienceBarContainer {
+    margin-bottom: 1rem;
+  }
+
+  .experienceBarContainer span {
+    font-size: 1.5rem;
+  }
+
+  .experienceBarContainer > div {
+    height: 6px;
+    border-radius: 6px;
+  }
+
+  .experienceBarContainer > div > div {
+    height: 6px;
+    border-radius: 6px;
+  }
+}
