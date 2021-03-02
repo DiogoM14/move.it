@@ -1,7 +1,10 @@
 import styles from '../../styles/components/Login.module.css';
+import Link from 'next/link';
 
 export function Login() {
   return (
+
+
     <div className={styles.loginContainer}>
       <img src="/icons/landing-logo.svg" alt=""/>
 
@@ -9,14 +12,16 @@ export function Login() {
 
       <div>
         <img src="/icons/github.svg" alt=""/>
-        <p>Faça login com o seu Github para começar</p> 
+        <p>Faça login com o seu Github para começar.</p> 
       </div>
 
       <div>
         <input type="text" placeholder="Digite o seu username"/>
-        <span>
-          <img src="/icons/landing-arrow.svg" alt=""/>
-        </span>
+        <Link href='/home'>
+          <span>
+            <img src="/icons/landing-arrow.svg" alt=""/>
+          </span>
+        </Link>
       </div>
     </div>
   )
