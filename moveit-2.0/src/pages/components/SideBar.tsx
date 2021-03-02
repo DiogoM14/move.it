@@ -1,6 +1,11 @@
+import Link from 'next/link';
 import styles from '../../styles/components/SideBar.module.css';
 
 export function SideBar() {
+  const handleLinkColor = () => {
+    
+  }
+
   return (
     <div className={styles.sideBarContainer}>
       <header>
@@ -8,12 +13,16 @@ export function SideBar() {
       </header>
 
       <div>
-        <button>
-          <img src="/icons/home.svg" alt="Página Inicial"/>
-        </button>
-        <button>
-          <img src="/icons/award.svg" alt="Página de Rankings"/>
-        </button>
+        <Link href="home">
+          <a onClick={handleLinkColor}>
+            <img src="/icons/home.svg" alt="Página Inicial"  />
+          </a>
+        </Link>
+        <Link href="/rank">
+          <a onClick={handleLinkColor}>
+            <img src="/icons/award.svg" alt="Página de Rankings" />
+          </a>
+        </Link>
       </div>
     </div>
   )

@@ -18,20 +18,20 @@
   display: flex;
   flex-direction: column;
   margin: auto 0;
+
+  width: 100%;
+
 }
 
-.sideBarContainer > div button {
-
-  border: none;
-  border-radius: 2px;
-
-  background: none;
-
-  font-size: 0;
+.sideBarContainer > div a {  
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
 }
 
-.sideBarContainer > div button:first-child {
-  margin-bottom: 2.75rem;
+.sideBarContainer > div a:first-child {
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--blue);
 }
 
 @media (max-width: 570px) {
@@ -59,7 +59,7 @@
     justify-content: center;
   }
 
-  .sideBarContainer > div button:first-child {
+  .sideBarContainer > div a:first-child {
     margin-bottom: 0;
     margin-right: 2.75rem;
   }
