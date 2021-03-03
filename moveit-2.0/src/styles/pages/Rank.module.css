@@ -1,3 +1,122 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .rankContainer {
+  max-width: 992px;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+.rankContainer h1 {
+  margin-bottom: 2.5rem;
   
+  font-size: 2.25rem;
+  font-weight: 600;
+
+  color: var(--title)
+}
+
+.rankContainer table {
+  width: 100%;
+}
+
+.rankContainer table tr {
+  width: 100%;
+  height: 96px;
+
+  display: grid;
+  grid-template-columns: 72px 0.7fr 0.25fr auto;
+}
+
+.rankContainer table tr td {
+  display: flex;
+  align-items: center;
+}
+
+.rankContainer table thead {
+  display: block;
+}
+
+.rankContainer table thead tr {
+  height: 15px;
+
+  margin-bottom: 1.5rem;
+}
+
+.rankContainer table thead th {
+  text-align: left;
+  text-transform: uppercase;
+
+  font-size: 0.8rem; 
+  font-weight: 700;
+}
+
+.rankContainer table tbody {
+  display: block;
+
+  height: calc(100vh * 0.8);
+
+  overflow-y: auto;
+
+  padding-bottom: 2rem;
+
+  scrollbar-width: none;
+}
+
+.rankContainer table tbody::-webkit-scrollbar {
+  width: 0;
+}
+
+.rankContainer table tbody tr {
+  margin-bottom: 0.5em;
+  
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+
+.rankContainer table tbody td {
+  background: var(--white);
+}
+
+.rankContainer table tbody td:first-child {
+  justify-content: center;
+  
+  margin-right: 0.25rem;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.rankContainer table tbody td > img {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 1rem 0 1.5rem;
+
+  border-radius: 50%;
+}
+
+.rankContainer table tbody td div strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  color: var(--title)
+}
+
+.rankContainer table tbody td strong {
+  margin-right: 5px;
+
+  color: var(--blue);
 }

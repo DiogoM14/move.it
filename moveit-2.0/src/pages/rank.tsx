@@ -7,20 +7,49 @@ export default function Rank() {
   <div className={styles.wrapper}>
 
     <Head>
-      <title>Home | Move.it</title>
+      <title>Ranking | Move.it</title>
     </Head>
 
     <SideBar />
 
-    <div className={styles.homeContainer}>
-      <section>
-        <div>
+    <div className={styles.rankContainer}>
+      <h1>Leaderboard</h1>
 
-        </div>
-        <div>
+      <table>
+            <thead>
+              <tr>
+                <th>Posição</th>
+                <th>Usuário</th>
+                <th>Desafios</th>
+                <th>Experiência</th>
+              </tr>
+            </thead>
 
-        </div>
-      </section>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img
+                    src="https://github.com/diogom14.png"
+                    alt="Diogo Martins"
+                  />
+                  <div>
+                    <strong>Diogo Martins</strong>
+                    <span>
+                      <img src="/icons/level.svg" alt="Level" /> 
+                      Level 19
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <strong>127</strong> completados
+                </td>
+                <td>
+                  <strong>108.000</strong> xp
+                </td>
+              </tr>
+            </tbody>
+          </table>
     </div>
   </div>
   )
