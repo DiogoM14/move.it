@@ -4,7 +4,7 @@
 }
 
 .rankContainer {
-  max-width: 992px;
+  max-width: 1080px;
   width: 100%;
   height: 100vh;
 
@@ -41,8 +41,8 @@
   align-items: center;
 }
 
-.rankContainer table thead {
-  display: block;
+.rankContainer table tr td > div img {
+  margin-right: 0.5rem;
 }
 
 .rankContainer table thead tr {
@@ -59,28 +59,10 @@
   font-weight: 700;
 }
 
-.rankContainer table tbody {
-  display: block;
-
-  height: calc(100vh * 0.8);
-
-  overflow-y: auto;
-
-  padding-bottom: 2rem;
-
-  scrollbar-width: none;
-}
-
-.rankContainer table tbody::-webkit-scrollbar {
-  width: 0;
-}
-
 .rankContainer table tbody tr {
   margin-bottom: 0.5em;
   
   border-radius: 5px;
-
-  overflow: hidden;
 }
 
 .rankContainer table tbody td {

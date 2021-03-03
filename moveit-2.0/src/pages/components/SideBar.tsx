@@ -9,7 +9,11 @@ export function SideBar() {
   return (
     <div className={styles.sideBarContainer}>
       <header>
-        <img src="/icons/logo.svg" alt=""/>
+        <Link href="/">
+          <a>
+            <img src="/icons/logo.svg" alt=""/>
+          </a>
+        </Link>
       </header>
 
       <div>

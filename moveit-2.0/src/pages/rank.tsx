@@ -49,6 +49,30 @@ export default function Rank() {
                 </td>
               </tr>
             </tbody>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img
+                    src="https://github.com/diogom14.png"
+                    alt="Diogo Martins"
+                  />
+                  <div>
+                    <strong>Diogo Martins</strong>
+                    <span>
+                      <img src="/icons/level.svg" alt="Level" /> 
+                      Level 19
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <strong>127</strong> completados
+                </td>
+                <td>
+                  <strong>108.000</strong> xp
+                </td>
+              </tr>
+            </tbody>
           </table>
     </div>
   </div>

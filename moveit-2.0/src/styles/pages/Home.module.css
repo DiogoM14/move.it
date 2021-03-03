@@ -4,7 +4,8 @@
 }
 
 .homeContainer {
-  width: 1080px;  /* max-width: ; */
+  max-width: 1080px;  /* max-width: ; */
+  width: 100%;
   margin: 0 auto;
   padding: 2.5rem 2rem;
   
